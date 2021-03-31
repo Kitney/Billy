@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( to bottom, #f15db9, #af15af, #497BE8,  #68EACC );
+}
+.TodoA{
+    margin: 120px auto;
+    max-width: 550px;
+    width: 100%;
+    background: wheat;
+    border-radius: 5px;
+    padding: 50px;
+}
+.TodoA header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.TodoA .inputField{
+    display: flex;
+    width: 100px;
+    margin: 40px 0;
+    
+}
+#add-task-input{
+    padding: 10px;
+    outline: none;
+    width: 80%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+}
+#add-task-button{
+    width: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #497BE8;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+
+    margin-left: 10px;
+}
+.TodoA .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+
+}
+.todoList li{
+    margin-top: 10px;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    /* text-decoration: line-through; */
+}
+.todoList li #spand-trash{
+    padding: 4px;
+    position: absolute;
+    right: -45px;
+    color: #ffff;
+    width: 45px;
+    text-align: center;
+    background: #e74c3c;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.todoList li:hover #spand-trash{
+    right: 0px;
+
+}
+.todoList li #spand-check{
+    position: absolute;
+    right: -45px;
+    bottom: 0px;
+    color: #ffff;
+    width: 45px;
+    padding: 4px;
+    text-align: center;
+    background: #686868;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* text-decoration: line-through; */
+}
+.todoList li:hover #spand-check{
+    right: 0px;
+    /* text-decoration: line-through; */
+
+}
+
+
+.TodoA .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
